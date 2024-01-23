@@ -24,14 +24,6 @@ public class Main {
             max = Math.max(num, Math.max(max, dp[i - 1] + num));
         }
 
-        for (int i = 0; i < n; i++) {
-            sum += dp[i];
-            max = Math.max(max, sum);
-            if (sum < 0) {
-                sum = 0;
-            }
-        }
-
         bw.write(max + "");
         bw.flush();
         bw.close();
