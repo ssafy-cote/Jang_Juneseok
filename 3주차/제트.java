@@ -13,7 +13,7 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
         R = Integer.parseInt(st.nextToken());
         C = Integer.parseInt(st.nextToken());
-        int mapLength = (int)Math.pow(2, N); //맵 전체 넓이
+        int mapLength = (int)Math.pow(2, N); //맵 전체 길이
 
         segment(mapLength, 0, 0, 0);
     }
