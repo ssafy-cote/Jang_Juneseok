@@ -50,7 +50,7 @@ public class Main {
                 if (willMoveNum > 100) continue;
 
                 willMoveNum = parents[willMoveNum];
-                if (willMoveNum > 100 || visited[willMoveNum]) continue;
+                if (visited[willMoveNum]) continue;
 
                 visited[willMoveNum] = true;
                 q.add(new User(willMoveNum, user.dist + 1));
